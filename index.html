@@ -20,10 +20,8 @@
         const url = document.getElementById('link');
         url.getAttribute("href");
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        //   location.replace("/mobile/");
             url.setAttribute("href", "https://myalbum.com/album/J4J5ucDZ6QdwpZ/");
         } else {
-        //   location.replace("/desktop.html");
             url.setAttribute("href", "https://enconstrucción.com/php/index.php");
         }
         console.log(url)
@@ -31,60 +29,29 @@
 </script>
 </head>
 
-<body onload="updateLink()">
-
-    <!--   <header class="header">
-           <nav class="menu">
-               <a href="#layer1" class="menu__item">1</a>
-   
-               <a href="#layer2" class="menu__item">2</a>
-   
-               <a href="#layer3" class="menu__item">3</a>
-   
-               <a href="#layer4" class="menu__item">4</a>
-   
-               <a href="#layer5" class="menu__item">5</a>
-   
-               <a href="#layer6" class="menu__item">6</a>
-           </nav>
-       </header>
-   
-       <footer class="footer">
-           &copy; 2016 George Howell 
-       </footer>   -->
-   
+<body onload="updateLink()">  
        <div class="wrapper">
            <div class="environment">
                <div class="scene" style="transform: translate3d(0px, 0px, 0px);">
    
                    <div id="layer1" class="layer" data-depth="0" style="transform: translate3d(0px, 0px, 0px);">
-                           <h2>art by GEORGE HOWELL<br>滚动进入<br>
+                        <h2>art by GEORGE HOWELL<br>滚动进入<br>
                            <small>mouse-scroll to navigate</small>
-                       </h2><!--h1>Layer 1</h1-->
+                       </h2>
                    </div>
    
-                   <div id="layer2" class="layer" data-depth="500" style="transform: translate3d(0px, 0px, -500px);">
-                       <!--h1>Layer 2</h1-->
-                   </div>
+                   <div id="layer2" class="layer" data-depth="500" style="transform: translate3d(0px, 0px, -500px);"></div>
    
-                   <div id="layer3" class="layer" data-depth="1000" style="transform: translate3d(0px, 0px, -1000px);">
-                       <!--h1>Layer 3</h1-->
-                   </div>
+                   <div id="layer3" class="layer" data-depth="1000" style="transform: translate3d(0px, 0px, -1000px);"></div>
    
-                   <div id="layer4" class="layer" data-depth="1500" style="transform: translate3d(0px, 0px, -1500px);">
-                       <!--h1>Layer 4</h1-->
-                   </div>
+                   <div id="layer4" class="layer" data-depth="1500" style="transform: translate3d(0px, 0px, -1500px);"></div>
    
-                   <div id="layer5" class="layer" data-depth="2000" style="transform: translate3d(0px, 0px, -2000px);">
-                       <!--h1>Layer 5</h1-->
-                   </div>
+                   <div id="layer5" class="layer" data-depth="2000" style="transform: translate3d(0px, 0px, -2000px);"></div>
    
                    <div id="layer6" class="layer" data-depth="2500" style="transform: translate3d(0px, 0px, -2500px);">
                        <a href="" id="link" class="wrapper"><h2>click here to enter<br>
                        <small>点击这里进入</small></h2></a>
                    </div>
-                  
-   
                </div>
            </div>
        </div>
@@ -95,6 +62,5 @@
        <script src="js/libs/underscore-min.js"></script>
        <script src="js/utils.js"></script>
        <script src="js/zoom.js"></script>
-   
-   
    </body>
+</html>
